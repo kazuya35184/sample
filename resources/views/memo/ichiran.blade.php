@@ -14,8 +14,7 @@
   @foreach($data as $item)
   <table cellspacing=10px;>
     <tr>
-      <td>{{$item->title}}</td>
-      <td><a href="{{action('MemoController@edit',['id'=>$item->id])}}">詳細</td>
+      <td>{{$item->title}}</td><td><a href="{{action('MemoController@edit',['id'=>$item->id])}}">詳細</td>
     </tr>
   </table>
   @endforeach
